@@ -1,0 +1,12 @@
+python parallel_generate-refgpt-fact.py \
+      --reference_filepaths wiki_demo.jsonl \
+      --api_config api_config.jsonl \
+      --save_filepath output.jsonl \
+      --num_chat_to_generate 20000 \
+      --language en \
+      --assistant_word_count 300 \
+      --human_word_count 100 \
+      --num_turn_ratios 0 1 2 2 0 \
+      --max_attempts 5 \
+      --max_requests_per_minute 1000 \
+      --max_tokens_per_minute 40000
